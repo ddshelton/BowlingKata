@@ -4,10 +4,15 @@
 
 #include "game.h"
 
-void Game::roll(int frames) {
-
+void Game::roll(int frame)
+{
+    score += frame;
 }
-
-int Game::scoreGame() {
-    return 0;
+/**
+ *
+ * Returns final game score
+ */
+int Game::scoreGame()
+{
+    return score;
 }
